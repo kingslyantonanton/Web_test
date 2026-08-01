@@ -1,0 +1,1 @@
+const music=document.getElementById('bgMusic');const playlist=['music/song1.mp3','music/song2.mp3'];let s=0;music.src=playlist[0];music.addEventListener('ended',()=>{s++;if(s<playlist.length){music.src=playlist[s];music.play();}});
